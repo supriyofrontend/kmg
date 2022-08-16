@@ -3,21 +3,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /******** Color Schemes ********/
-/*
+
 :root {
-  --c-primary-dark: #FC6400;
-  --c-white: #ffffff;
-  --c-blue: #0012A2;
-  --c-red: #F12D2D;
-  --c-black-text: #000000;
-  --c-light-grey: #C0C0C0;
-  --c-dark-grey: #4F4F4F;
-  --c-primary-text: #FF5600;
-  --c-secondary-text: #2D2D2D;
-  --c-semi-grey: #666666;
-  --ff-primary: 'Montserrat', sans-serif;
+  --c-primary: #e32330;
+  --c-secondary: #241b16;
+
+  --c-text-dark: #161616;
+  --c-text-light: #727272;
+
+  --ff-primary: 'Arimo', sans-serif;
+  --ff-secondary: 'Audiowide', cursive;
+  --ff-tertiary: 'Montserrat', sans-serif;
+  --ff-tertiary-alt: 'Poppins', sans-serif;
 }
-*/
+
 
 /******** CSS Resets ********/
 * {
