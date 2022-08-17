@@ -15,11 +15,35 @@
 }
 
 @media (min-width: 1024px) and (max-width: 1200px){
-	
+	.navigation .nav-item a {font-size: 12px;}
+    .heading-text h2 {font-size: 18px;}
+    .faq .accordion-button.collapsed {font-size: 16px;}
+    .bottom-text li a {font-size: 12px;}
+    .footer-header h3 {font-size: 13px;}
+    .footer-1-text li a {font-size: 12px;}
+    .footer-2-text li a {font-size: 12px;}
+    .footer-3-text li a {font-size: 12px;}
+    .footer-4-text li a {font-size: 12px;}
+    .copyright-left h4 {font-size: 12px;}
+
+
 }
 
 @media (min-width: 992px) and (max-width: 1024px) {
-	
+    .navigation .nav-item a {font-size: 12px;}
+    .heading-text h2 {font-size: 18px;}
+    .faq .accordion-button.collapsed {font-size: 16px;}
+    .bottom-text li a {font-size: 12px;}
+    .footer-header h3 {font-size: 13px;}
+    .footer-1-text li a {font-size: 12px;}
+    .footer-2-text li a {font-size: 12px;}
+    .footer-3-text li a {font-size: 12px;}
+    .footer-4-text li a {font-size: 12px;}
+    .copyright-left h4 {font-size: 12px;}
+    .cart-section li h4 {font-size: 13px;}
+    
+
+
 }
 
 @media only screen and (max-width: 991.98px) {    

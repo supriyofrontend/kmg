@@ -17,8 +17,70 @@
   --ff-tertiary-alt: 'Poppins', sans-serif;
 }
 
+/******** CSS Resets ********/
+* {
+  padding: 0;
+  margin: 0 auto;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
 
-/*--top-section--*/
+li {
+  list-style: none;
+}
+
+a:focus, a:hover {
+  outline: none;
+}
+
+a {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: var(--c-black-text);
+  line-height: 18px;
+  font-weight: 400;
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-size: 14px;
+  color: var(--c-black-text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ff-primary);
+  margin-bottom: 0;
+}
+
+/******** Utility Classes ********/
+/*
+.container {
+  width: 100%;
+  max-width: 1360px;
+}
+*/
+.container-fluid {
+  padding-right:50px;
+  padding-left:50px;
+}
+.custom-pad {
+  padding: 60px 0;
+}
+/*supriyo-eork-start*/
+/*top-section-start*/
 
 .top-section .top-nav li {
   display: inline-block;
@@ -79,14 +141,13 @@
 .logo-search ul li {
   display: inline-block;
 }
-.logo-search ul li .btn.btn-primary.mb-3 {
-    margin-bottom: 3px !important;
-    border-radius: 0px 5px 5px 0;
-    background-color:#e32330;
-    color:#fff;
-    border-color: #e32330;
-    width: 70px;
+.logo-search form input {
+  width: 495px;
 }
+.footer-3-button {
+  position: absolute;
+}
+
 .log-in li a {
   font-family: 'Arimo', sans-serif;
   font-weight: 400;
@@ -122,72 +183,10 @@
   border-radius: 5px 0 0 5px;
 }
 
+/*top-section-end*/
 
 
-/******** CSS Resets ********/
-* {
-  padding: 0;
-  margin: 0 auto;
-}
 
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  list-style: none;
-}
-
-a:focus, a:hover {
-  outline: none;
-}
-
-a {
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-p {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  color: var(--c-black-text);
-  line-height: 18px;
-  font-weight: 400;
-}
-
-body {
-  font-family: var(--ff-primary);
-  font-size: 14px;
-  color: var(--c-black-text);
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--ff-primary);
-  margin-bottom: 0;
-}
-
-/******** Utility Classes ********/
-/*
-.container {
-  width: 100%;
-  max-width: 1360px;
-}
-*/
-.container-fluid {
-  padding-right:50px;
-  padding-left:50px;
-}
-
-.custom-pad {
-  padding: 60px 0;
-}
 
 
 /*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+toggle-nav-css-start=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
@@ -267,3 +266,204 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /*=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+toggle-nav-css-end=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+*/
+
+
+/*faq-section-start*/
+
+.faq-accordion {
+  margin-top: 50px;
+}
+.faq .accordion-button.collapsed {
+  font-family: 'Audiowide', cursive;
+  font-size: 20px;
+  padding: 20px;
+}
+.accordion-button:not(.collapsed) {
+  font-family: 'Audiowide', cursive;
+  font-size: 20px;
+  color: #000;
+  background-color: #fff;
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+}
+.accordion-body {
+  font-family: 'Montserrat', sans-serif;
+  font-size:15px;
+  font-weight:400;
+  color: #727272;
+}
+.faq {
+  padding: 50px 0;
+}
+.bottom-text li {
+  display: inline-block;
+  padding: 0 10px 0 0px;
+
+}
+.bottom-text li a {
+  color:#e32330;
+  font-family: 'Montserrat', sans-serif;
+  font-size:15px;
+  font-weight:400;
+}
+.faq-bottom {
+  text-align: center;
+  margin-top: 40px;
+}
+
+
+
+
+
+/*faq-section-end*/
+
+/*footer-start*/
+.footer-1-text {
+  margin-top: 40px;
+}
+.footer-2-text {
+  margin-top: 64px;
+}
+.footer-3-text {
+  margin-top: 40px;
+}
+.footer-4-text {
+  margin-top: 64px;
+}
+.footer-header {
+  position: relative;
+}
+.footer-header::after {
+  position: absolute;
+  content: '';
+  background-color: #9c9c9c;
+  height: 1px;
+  width: 70px;
+  bottom: -15px;
+
+}
+.footer-header h3 {
+  font-size: 15px;
+  font-family: 'Audiowide', cursive;
+  font-weight:400;
+  text-transform: uppercase;
+}
+.footer-1-text li {
+  padding: 0 0 20px 0;
+}
+.footer-2-text li {
+  padding: 0 0 20px 0;
+}
+.footer-3-text li {
+  padding: 0 0 20px 0;
+}
+.footer-4-text li {
+  padding: 0 0 20px 0;
+}
+.footer-1-text li a span {
+  padding-right: 10px;
+}
+.footer-2-text li a span {
+  padding-right: 10px;
+}
+.footer-3-text li a span {
+  padding-right: 10px;
+}
+.footer-4-text li a span {
+  padding-right: 10px;
+}
+.footer-1-text li a {
+  text-decoration: none;
+  color: #727272;
+  font-family:'Arimo', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+
+}
+.footer-2-text li a {
+  text-decoration: none;
+  color: #727272;
+  font-family:'Arimo', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+
+}
+.footer-3-text li a {
+  text-decoration: none;
+  color: #727272;
+  font-family:'Arimo', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+
+}
+.footer-4-text li a {
+  text-decoration: none;
+  color: #727272;
+  font-family:'Arimo', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+
+}
+.footer-1-text li a span {
+  padding-right: 10px;
+  color: #e32330;
+  font-size: 18px;
+}
+.footer-2-text li a span {
+  padding-right: 10px;
+  color: #e32330;
+  font-size: 18px;
+}
+.footer-3-text li a span {
+  padding-right: 10px;
+  color: #e32330;
+  font-size: 18px;
+}
+.footer-4-text li a span {
+  padding-right: 10px;
+  color: #e32330;
+  font-size: 18px;
+}
+.footer-wrap {
+  padding: 50px 0 0;
+  background-color: #f2f2f2;
+}
+.footer-5 iframe {
+  width: 100%;
+  height: 220px;
+  margin-top: 40px;
+}
+
+.copyright-icons li {
+  display: inline-block;
+  padding: 0 0px 0 10px;
+}
+.copyright-icons li a {
+  background-color: #e32330;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  display: inline-block;
+  line-height: 32px;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 50px;
+}
+.copyright-right {
+  text-align: right;
+}
+.copyright {
+  background-color: #dadada;
+  padding: 15px 0;
+  margin-top: 50px;
+}
+.copyright-left h4 {
+  font-size: 15px;
+  color: #727272;
+  font-family:'Arimo', sans-serif;
+  font-weight: 400;
+}
+
+
+
+/*footer-end*/
+/*supriyo-work-end*/
