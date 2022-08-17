@@ -76,9 +76,35 @@ h1, h2, h3, h4, h5, h6 {
   padding-right:50px;
   padding-left:50px;
 }
+
+/* Custom Properties */
 .custom-pad {
   padding: 60px 0;
 }
+.custom-heading {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.custom-heading::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  border-top: 1px dashed var(--c-grey-light);
+  inset: 50% auto auto 0;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+.custom-heading .product-section-heading {
+  width: fit-content;
+  padding: 0 25px;
+  color: var(--c-black);
+  font-size: 25px;
+  text-transform: uppercase;
+  background-color: #fff;
+}
+/* Custom Properties */
+
 /*supriyo-eork-start*/
 /*top-section-start*/
 
