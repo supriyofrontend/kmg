@@ -179,7 +179,9 @@ h1, h2, h3, h4, h5, h6 {
 .footer-3-button {
   position: absolute;
 }
-
+.log-in {
+  margin-right: 20px;
+}
 .log-in li a {
   font-family: 'Arimo', sans-serif;
   font-weight: 400;
