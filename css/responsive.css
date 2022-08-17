@@ -15,6 +15,21 @@
 }
 
 @media (min-width: 1024px) and (max-width: 1200px){
+
+	.custom-offer-banner1 .ni-banner-wrap {flex-wrap: wrap;}
+    .ni-banner a img{width: 100%;}
+    .custom-offer-banner1 li.ni-banner:nth-child(odd){margin-left: 0;width: 59%;}
+    .custom-offer-banner1 li.ni-banner:nth-child(even){width: 39%; margin-right: 0;}
+    .custom-offer-banner1 li.ni-banner {margin-bottom: 22px;}
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+	.custom-offer-banner1 .ni-banner-wrap {flex-wrap: wrap;}
+    .ni-banner a img{width: 100%;}
+    .custom-offer-banner1 li.ni-banner:nth-child(odd){margin-left: 0;width: 58%;}
+    .custom-offer-banner1 li.ni-banner:nth-child(even){width: 38%; margin-right: 0;}
+    .custom-offer-banner1 li.ni-banner {margin-bottom: 22px;}
+
 	.navigation .nav-item a {font-size: 12px;}
     .heading-text h2 {font-size: 18px;}
     .faq .accordion-button.collapsed {font-size: 16px;}
@@ -42,6 +57,7 @@
     .copyright-left h4 {font-size: 12px;}
     .cart-section li h4 {font-size: 13px;}
     
+
 
 
 }
