@@ -143,6 +143,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .logo-search form input {
   width: 495px;
+  border-radius: 5px 0px 0px 5px;
 }
 .footer-3-button {
   position: absolute;
@@ -178,9 +179,16 @@ h1, h2, h3, h4, h5, h6 {
   padding: 25px 0;
 
 }
-.logo-search #inputPassword2 {
-  border-radius: 0px;
-  border-radius: 5px 0 0 5px;
+.logo-search .btn.btn-outline-success {
+  background-color: #e32330;
+  color: #fff;
+  border-color: #e32330;
+  border-radius: 0 5px 5px 0;
+  width: 90px;
+}
+.form-control {
+  background-color: #f8f8f8;
+  border: 1px solid transparent;
 }
 
 /*top-section-end*/
